@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Yolk and Crumb</title>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  >
+ <link
+  href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&display=swap"
+  rel="stylesheet">
+<!-- โหลด FontAwesome สำหรับไอคอนรูปโทรศัพท์ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+
+
+
+</head>
+
+<body>
+
+<!-- Header -->
+  <header class="site-header">
+
+    <a href="index.html" class="logo">
+      <img src="/pictures/logo_005.png" alt="yolk and crumb" class="logo-img">
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="pastry.html" class="nav-link">PASTRY</a>
+      <a href="dessert.html" class="nav-link">DESSERT</a>
+      <a href="drinks.html" class="nav-link">DRINKS</a>
+      <a href="about.html" class="nav-link">ABOUT</a>
+    </nav>
+
+    <!-- จัดกลุ่มไอคอนและปุ่มสามขีดให้อยู่ด้วยกันใน div นี้ -->
+    <div class="mobile-header-right">
+      <div class="header-icons">
+        <a href="https://www.instagram.com/yolk_and_crumb?stkn=MXF0NWw0bGdmMWV0MA==" target="_blank">
+          <img src="/pictures/logo_ig_h.png" alt="Picture Instagram" class="social-logo" style="width: 40px; height: auto; border-radius: 8px;">
+        </a>
+        <a href="https://www.facebook.com/p/Yolk-Crumb-61583239731599/" target="_blank">
+          <img src="/pictures/logo_fb_h.png" alt="Picture Facebook" class="social-logo" style="width: 40px; height: auto; border-radius: 8px;">
+        </a>
+        <a href="https://www.instagram.com/yolk_and_crumb?stkn=MXF0NWw0bGdmMWV0MA==" target="_blank">
+          <img src="/pictures/logo_tt_h.png" alt="Picture Tiktok" class="social-logo" style="width: 40px; height: auto; border-radius: 8px;">
+        </a>
+      </div>
+
+      <!-- ปุ่มสามขีดสำหรับมือถือ -->
+      <div class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+    
+  </header>
+
+
+  <!-- Hero -->
+  <main>
+
+    <section class="hero">
+
+    <div class="slider-container">
+
+        <!-- สไลด์ภาพที่ 1 -->
+        <div class="my-slides fade">
+            <img src="/pictures/slice_001.jpg" alt="ภาพที่ 1">
+            <div class="text-caption">Welcome to Yolk & Crumb</div>
+        </div>
+
+        <!-- สไลด์ภาพที่ 2 -->
+        <div class="my-slides fade">
+            <img src="/pictures/slice_002.jpg" alt="ภาพที่ 2">
+            <div class="text-caption">Golden, aromatic and baked to perfection</div>
+        </div>
+
+        <!-- สไลด์ภาพที่ 3 -->
+        <div class="my-slides fade">
+            <img src="/pictures/slice_003.jpg" alt="ภาพที่ 3">
+            <div class="text-caption">Crunchy on the edges, chewy in the center—pure cookie bliss.</div>
+        </div>
+
+        <!-- สไลด์ภาพที่ 4 -->
+        <div class="my-slides fade">
+            <img src="/pictures/slice_004.jpg" alt="ภาพที่ 4">
+            <div class="text-caption">Buttery crusts filled with rich, heavenly sweetness</div>
+        </div>
+
+        <!-- สไลด์ภาพที่ 5 -->
+        <div class="my-slides fade">
+            <img src="/pictures/slice-005.jpg" alt="ภาพที่ 5">
+            <div class="text-caption">Refreshingly smooth and crafted to perfection in every sip</div>
+        </div>
+
+        <!-- ปุ่มควบคุม ซ้าย/ขวา -->
+        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+        <button class="next" onclick="plusSlides(1)">&#10095;</button>
+
+        <!-- จุดวงกลมบอกตำแหน่งภาพ -->
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </div>
+    </section>
+
+      <!-- =================================
+         INFORMATION SECTION
+    ================================== -->
+    <section class="info-section">
+
+      <div class="info-container">
+
+        <!-- Location -->
+        <div class="info-column location-column">
+
+          <h2>Location</h2>
+
+          <p>
+            YOLK & CRUMB<br>
+            1130 Pleasant St<br>
+            Worcester, MA<br>
+            01602
+          </p>
+
+            <a href="https://www.google.com/maps/place/Yolk+and+Crumb/@42.2783921,-71.8579001,17z/data=!3m1!4b1!4m6!3m5!1s0x89e405001bfab589:0xea1b079aadc19fd6!8m2!3d42.2783921!4d-71.8553252!16s%2Fg%2F11ml51kjbp?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+            <i class="fa-solid fa-location-dot"></i>
+            Get Directions
+          </a>
+
+          <img
+            src="/pictures/logo_005.png"
+            alt="Yolk and Crumb"
+            class="info-logo"
+          >
+
+        </div>
+
+
+        <!-- Hours -->
+        <div class="info-column hours-column">
+
+          <h2>Hours</h2>
+
+          <p>
+            Wednesday - Friday :<br>
+            7:00 AM - 3:00 PM<br>
+            Saturday and Sunday : <br>
+            8:00 AM - 3:00 PM<br>
+          </p>
+
+
+        </div>
+        <!-- Social + Contact -->
+        <div class="info-column contact-column">
+          <h2>Find Us On...</h2>
+          <div class="info-social">
+            <a href="https://www.instagram.com/yolk_and_crumb" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.instagram.com/yolk_and_crumb?stkn=MXF0NWw0bGdmMWV0MA==" target="_blank">
+              <i class="fa-brands fa-facebook-square"></i>
+            </a>
+            <a href="https://www.instagram.com/yolk_and_crumb?stkn=MXF0NWw0bGdmMWV0MA==" target="_blank">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </div>
+          <div class="contact-us">
+            <h2>Contact Us</h2>
+            <p>
+              <a href="tel:5083041115">
+                (508) 304-1115
+              </a>
+            </p>
+            <p>
+              <a href="mailto:adminyolkandcrumb@gmail.com">
+                adminyolkandcrumb@gmail.com
+
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+
+<!-- แถบข้อมูลด้านล่าง (Footer Bar) -->
+    <footer class="bottom-bar">
+        <div class="footer-content">
+            <span class="address">
+              <!-- ลิงก์ไป Google Maps -->
+        <a href="https://www.google.com/maps/place/Yolk+and+Crumb/@42.2783921,-71.8579001,17z/data=!3m1!4b1!4m6!3m5!1s0x89e405001bfab589:0xea1b079aadc19fd6!8m2!3d42.2783921!4d-71.8553252!16s%2Fg%2F11ml51kjbp?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+             1130 Pleasant St, Worcester, MA 01602
+        </a></span>
+            <span class="separator">•</span>
+            <span class="phone">
+                <i class="fa-solid fa-phone"></i> <!-- ลิงก์โทรออก -->
+        <a href="tel:5083041115">
+             (508) 304-1115
+        </a>
+            </span>
+        </div>
+    </footer>
+
+
+
+
+  <!-- เชื่อมโยงไฟล์ JavaScript External -->
+    <script src="script.js"></script>
+</body>
+
+</html>
